@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/etSecondNumber"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvNum1"
+        android:layout_width="102dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="200dp"
+        android:text="1st Number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNum2"
+        android:layout_width="106dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="84dp"
+        android:text="2nd Number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNum1"
+        android:layout_width="132dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNum1" />
+
+    <EditText
+        android:id="@+id/etNum2"
+        android:layout_width="121dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNum1" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="70dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:text="+"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNum1" />
+
+    <Button
+        android:id="@+id/btnSubtract"
+        android:layout_width="70dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="32dp"
+        android:text="-"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNum1" />
+
+    <Button
+        android:id="@+id/btnMultiply"
+        android:layout_width="70dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="32dp"
+        android:text="*"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNum1" />
+
+    <Button
+        android:id="@+id/btnModulus"
+        android:layout_width="70dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:text="%"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNum1" />
+
+    <TextView
+        android:id="@+id/tvResults"
+        android:layout_width="286dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="64dp"
+        android:text="Result equals"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSubtract" />
+
+    <TextView
+        android:id="@+id/tvFirstText"
+        android:layout_width="185dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="76dp"
+        android:text="Do Your Maths Here"
+        android:textAlignment="inherit"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvNum1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
